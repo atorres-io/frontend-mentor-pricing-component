@@ -1,0 +1,21 @@
+.card {
+	width: 345px;
+	height: 460px;
+	box-shadow: 0 20px 25px -5px rgb(105 111 221 / 10%);
+	transition: height 250ms ease;
+}
+
+.card.basic {
+	background-color: var(--color-card);
+	border-radius: 10px 0 0 10px;
+}
+
+.card.professional {
+	background: var(--gradient);
+	border-radius: 10px;
+}
+
+.card.master {
+	background-color: var(--color-card);
+	border-radius: 0 10px 10px 0;
+}

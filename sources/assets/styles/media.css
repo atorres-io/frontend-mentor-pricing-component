@@ -1,3 +1,35 @@
+@media screen and (min-width: 780px) {
+	.card.professional {
+		height: 500px;
+	}
+}
+
+@media screen and (max-width: 1090px) {
+	.card {
+		width: calc(345px - 100px);
+		height: calc(460px - 100px);
+	}
+
+	.card.professional {
+		height: calc(500px - 100px);
+	}
+}
+
+@media screen and (max-width: 780px) {
+	main {
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+	}
+
+	.card {
+		margin: 1rem 0;
+	}
+
+	:is(.card.basic, .card.master) {
+		border-radius: 10px;
+	}
+}
+
 @media screen and (max-width: 500px) {
 	body {
 		background-size: 15rem, 12rem;
