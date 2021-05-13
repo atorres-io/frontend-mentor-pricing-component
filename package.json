@@ -1,0 +1,23 @@
+{
+	"name": "frontend-mentor-pricing-component",
+	"version": "1.0.0",
+	"description": "Frontend Mentor challenge on a component",
+	"main": "main.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/atorres-io/frontend-mentor-pricing-component.git"
+	},
+	"keywords": [
+		"HTML5",
+		"CSS3",
+		"JS",
+		"ES6",
+		"Flexbox",
+		"ITCSS"
+	],
+	"author": "Alejandro Torres",
+	"bugs": {
+		"url": "https://github.com/atorres-io/frontend-mentor-pricing-component/issues"
+	},
+	"homepage": "https://github.com/atorres-io/frontend-mentor-pricing-component#readme"
+}
