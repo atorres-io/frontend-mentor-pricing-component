@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@import 'frameworks/normalize.css';
+@import 'frameworks/atorres-io.css';
+@import 'global.css';
+@import 'general.css';
+@import 'objects.css';
+@import 'components.css';
+@import 'utilities.css';
+@import 'media.css';

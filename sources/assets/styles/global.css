@@ -1,0 +1,12 @@
+:root {
+	--font-family: 'Montserrat', sans-serif;
+	--weight-normal: 700;
+	--color-background: #f6f6fe;
+	--color-primary: #696fdd;
+	--color-neutral: #6d708d;
+	--color-hr: #b3b5c6;
+	--color-title: #494c5f;
+	--color-font-dark: #6d708d;
+	--color-font-light: #ffffff;
+	--gradient: linear-gradient(to left, #a3a8f0, #696fdd);
+}

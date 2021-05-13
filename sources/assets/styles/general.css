@@ -1,0 +1,8 @@
+body {
+	font-size: 15px;
+	background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-position: top right, bottom left;
+	background-size: 20rem, 15rem;
+	transition: background-size 250ms ease;
+}
