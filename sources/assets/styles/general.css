@@ -10,6 +10,8 @@ body {
 
 header {
 	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
 	justify-content: center;
 	width: 100%;
 }
@@ -20,4 +22,17 @@ main {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+}
+
+h1 {
+	font-size: 2em;
+	color: var(--color-title);
+	font-weight: var(--weight-normal);
+	margin-bottom: 0;
+}
+
+label {
+	font-size: 1em;
+	color: var(--color-hr);
+	font-weight: var(--weight-normal);
 }

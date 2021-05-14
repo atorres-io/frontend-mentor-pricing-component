@@ -44,20 +44,15 @@ img {
 	text-align: center;
 }
 
+:is(button, select, input) {
+	appearance: none;
+	-webkit-appearance: none;
+}
+
 input:disabled {
 	appearance: none;
 	-webkit-appearance: none;
 	-webkit-text-fill-color: var(--color-neutral);
-}
-
-button {
-	appearance: none;
-	-webkit-appearance: none;
-}
-
-select {
-	appearance: none;
-	-webkit-appearance: none;
 }
 
 hr {

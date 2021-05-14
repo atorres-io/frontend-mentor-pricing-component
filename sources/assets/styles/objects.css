@@ -1,0 +1,47 @@
+/* Custom Checkbox */
+
+input[type='checkbox'] {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+.check {
+	position: relative;
+	display: flex;
+	width: 55px;
+	height: 32px;
+	background: var(--gradient);
+	border-radius: 30rem;
+	margin: 0 1.2rem;
+	overflow: hidden;
+	cursor: pointer;
+	transition: background 250ms ease;
+}
+
+.check:hover {
+	background: var(--gradient-hover);
+}
+
+.check::after {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	content: '';
+	width: 24px;
+	height: 24px;
+	background-color: var(--color-font-light);
+	border-radius: 50%;
+	transition: width 400ms cubic-bezier(0.25, 0.1, 0.25, 1.65),
+		left 400ms cubic-bezier(0.25, 0.1, 0.25, 1.65),
+		transform 400ms cubic-bezier(0.25, 0.1, 0.25, 1.65);
+}
+
+.check:active::after {
+	width: 30px;
+}
+
+input[type='checkbox']:checked + .check::after {
+	left: calc(100% - 4px);
+	transform: translateX(-100%);
+}

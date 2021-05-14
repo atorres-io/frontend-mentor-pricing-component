@@ -10,4 +10,9 @@
 	--color-font-dark: #6d708d;
 	--color-font-light: #ffffff;
 	--gradient: linear-gradient(to bottom, #a3a8f0, #696fdd);
+	--gradient-hover: linear-gradient(
+		to bottom,
+		hsl(236, 72%, 85%),
+		hsl(237, 63%, 75%)
+	);
 }

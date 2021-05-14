@@ -1,6 +1,11 @@
 .card {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
 	width: 345px;
 	height: 460px;
+	padding: 20px;
 	box-shadow: 0 20px 25px -5px rgb(105 111 221 / 10%);
 	transition: height 250ms ease;
 }
@@ -18,4 +23,78 @@
 .card.master {
 	background-color: var(--color-card);
 	border-radius: 0 10px 10px 0;
+}
+
+.card h2 {
+	font-size: 1.5em;
+	color: var(--color-font-dark);
+	font-weight: var(--weight-normal);
+	margin-bottom: 1.3rem;
+}
+
+.card.professional :is(h2, h3.price, span) {
+	color: var(--color-font-light);
+}
+
+.card h3.price {
+	font-size: 4.2em;
+	color: var(--color-title);
+	font-weight: var(--weight-normal);
+	margin-bottom: 2rem;
+}
+
+.card h3.price::before {
+	content: '$ ';
+	font-size: 0.8em;
+}
+
+.card span {
+	width: 95%;
+	padding: 1rem 0;
+	text-align: center;
+	font-size: 1em;
+	color: var(--color-font-dark);
+	font-weight: var(--weight-normal);
+	border-top: solid 1px var(--color-hr);
+}
+
+.card span.last {
+	border-bottom: solid 1px var(--color-hr);
+	margin-bottom: 2rem;
+}
+
+.card button {
+	width: 95%;
+	padding: 0.9rem 0;
+	font-size: 0.9em;
+	border-radius: 8px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: transparent;
+	background: var(--gradient);
+	color: var(--color-font-light);
+	cursor: pointer;
+	transition: background 250ms ease, color 250ms ease, border-color 250ms ease;
+}
+
+.card.professional button {
+	background: var(--color-font-light);
+	color: var(--color-primary);
+}
+
+.card button:hover {
+	border-color: var(--color-primary);
+	background: transparent;
+	color: var(--color-primary);
+}
+
+.card.professional button:hover {
+	border-color: var(--color-font-light);
+	color: var(--color-font-light);
+}
+
+.card button.professional {
+	border: solid 1px var(--color-font-dark);
+	background: var(--color-font-dark);
+	color: var(--color-primary);
 }

@@ -1,1 +1,2 @@
-/* Not used */
+const app = new PriceController();
+app.initListeners();

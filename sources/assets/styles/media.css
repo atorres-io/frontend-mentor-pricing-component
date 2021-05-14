@@ -13,6 +13,23 @@
 	.card.professional {
 		height: calc(500px - 100px);
 	}
+
+	.card h2 {
+		margin-bottom: 0.5rem;
+	}
+
+	.card h3.price {
+		font-size: 3em;
+		margin-bottom: 1rem;
+	}
+
+	.card span.last {
+		margin-bottom: 1.5rem;
+	}
+
+	.card button {
+		padding: 0.7rem 0;
+	}
 }
 
 @media screen and (max-width: 780px) {
@@ -27,6 +44,16 @@
 
 	:is(.card.basic, .card.master) {
 		border-radius: 10px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		padding: 60px 20px;
+	}
+
+	.margin-y-md {
+		margin: 1.7rem 0 2.7rem 0;
 	}
 }
 
